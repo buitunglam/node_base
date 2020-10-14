@@ -6,7 +6,7 @@ class SiteController {
 
     // GET detail
     show(req, res) {
-        res.send('search');
+              res.send('search');
     }
 }
 
