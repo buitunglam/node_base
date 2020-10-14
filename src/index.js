@@ -13,7 +13,7 @@ app.engine('hbs', handlebars({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
          app.set('views', path.join(__dirname, 'resources\\views'));
 
-//Route init add commentasdasd
+//Route init add comment
                        route(app);
 
           app.listen(port, () => {});
