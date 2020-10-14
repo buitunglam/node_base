@@ -11,9 +11,9 @@ const route = require('./routes');
 app.use(morgan('combined'));
 app.engine('hbs', handlebars({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
-      app.set('views', path.join(__dirname, 'resources\\views'));
+         app.set('views', path.join(__dirname, 'resources\\views'));
 
-//Route init sdfasdfs
+//Route init add comment
                        route(app);
 
           app.listen(port, () => {});
