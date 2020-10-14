@@ -8,13 +8,13 @@
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss -o rc/public/css"
   },
-  "lint-staged": {
-    "src/**/*.{js,scss,json}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,scss,json}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "author": "",
   "license": "ISC",
