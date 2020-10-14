@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "beauty": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,scss,json}",
+    "beauty": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss -o rc/public/css"

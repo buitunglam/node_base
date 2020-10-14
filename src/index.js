@@ -9,11 +9,11 @@ const route = require('./routes');
 app.use(express.static(path.join(__dirname, 'public')));
 //use morgan to tracking request form client
 app.use(morgan('combined'));
-    app.engine('hbs', handlebars({ extname: '.hbs' }));
+app.engine('hbs', handlebars({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
-       app.set('views', path.join(__dirname, 'resources\\views'));
+app.set('views', path.join(__dirname, 'resources\\views'));
 
-//Route init
+//Route init sdfasdfs
 route(app);
 
-        app.listen(port, () => {});
+app.listen(port, () => {});
