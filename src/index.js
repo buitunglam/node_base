@@ -6,14 +6,14 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const route = require('./routes');
 //config static folder
-app.use(express.static(path.join(__dirname, 'public')));
+     app.use(express.static(path.join(__dirname, 'public')));
 //use morgan to tracking request form client
 app.use(morgan('combined'));
 app.engine('hbs', handlebars({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources\\views'));
+      app.set('views', path.join(__dirname, 'resources\\views'));
 
 //Route init sdfasdfs
-route(app);
+                       route(app);
 
-app.listen(port, () => {});
+          app.listen(port, () => {});
